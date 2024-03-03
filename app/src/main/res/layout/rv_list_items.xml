@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvGradient"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="4dp"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FCF8F7F7"
+            android:layout_gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivuser"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:civ_border_width="2dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_centerVertical="true"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:id="@+id/textView_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_medium"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_xsmall"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/ivuser"
+                android:maxLines="2"
+                android:text="@string/app_name"
+                android:elevation="@dimen/margin_xsmall"
+                android:fontFamily="@font/robotoslab_bold" />
+
+            <TextView
+                android:id="@+id/textView_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/textView_name"
+                android:layout_toEndOf="@+id/ivuser"
+                android:elevation="@dimen/margin_xsmall"
+                android:text="@string/app_name"
+                android:fontFamily="@font/robotoslab_regular"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_xsmall"
+                />
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
