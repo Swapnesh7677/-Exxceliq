@@ -2,7 +2,9 @@ package com.swapnesh.exxceliq.data.remote
 
 import com.swapnesh.exxceliq.data.Result
 import retrofit2.Response
-
+/**
+ * Abstract Base Data source class with error handling
+ */
 abstract  class BaseDataSource {
 
     protected suspend fun <T> getResult(call: suspend () -> Response<T>): Result<T>{
@@ -20,6 +22,9 @@ abstract  class BaseDataSource {
     }
 
     private fun <T> error(message: String): Result<T> {
+
+        /** We can deserialize error model (in case we get error msg from server)
+         * and pass the message */
         return Result.Error("Network call has failed for a following reason: $message")
     }
 

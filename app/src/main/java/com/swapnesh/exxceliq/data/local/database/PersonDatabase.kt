@@ -9,7 +9,9 @@ import androidx.sqlite.db.SupportSQLiteDatabase
 import com.swapnesh.exxceliq.data.local.database.daos.PersonDao
 
 import com.swapnesh.exxceliq.domain.model.PersonData
-
+/**
+ * The Room database for this app
+ */
 @Database(entities = [PersonData::class],
  version = 1, exportSchema = false)
 @TypeConverters()

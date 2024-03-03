@@ -11,4 +11,5 @@ object ConnectivityUtil {
         val activeNetwork: NetworkInfo? = cm.activeNetworkInfo
         return activeNetwork?.isConnectedOrConnecting == true
     }
+    // network connection check
 }
