@@ -1,10 +1,10 @@
-# News-Feed Jetpack Components
-App demonstrating Clean Architecture using Coroutines and Android Jetpack Components (Room, MVVM Paging, Navigation Components and Live Data)
+# Jetpack Components
+App demonstrating Clean Architecture using Coroutines and Android Jetpack Components (Room, MVVM, Paging and Live Data)
 
 
 # ScreenShots
 
-<img src = "https://github.com/kanch231004/News-Feed/blob/master/screenshots/NewsList%20Page.jpg" width = 260 height = 550/> <img src = "https://github.com/kanch231004/News-Feed/blob/master/screenshots/News%20Detail%20Page.jpg" width = 260 height = 550/>
+<img src = "https://github.com/Swapnesh7677/-Exxceliq/blob/main/screenshots/Screenshot_2024-03-03-12-41-05-91_69bdf2a36422b20c1b9a9d8ec235c6ba.jpg" width = 260 height = 550/> <img src = "https://github.com/Swapnesh7677/-Exxceliq/blob/main/screenshots/Screenshot_2024-03-03-12-41-07-83_69bdf2a36422b20c1b9a9d8ec235c6ba.jpg" width = 260 height = 550/>
 
 # Tech-Stack
 
@@ -13,14 +13,11 @@ App demonstrating Clean Architecture using Coroutines and Android Jetpack Compon
 * __Coroutines__ for background operations like fetching network response
 * __Room database__ : For offline persistence and Paging Library
 * __Live Data__ : To notify view for change
-* __Dagger__ : For dependency injection
+* __Dagger-Hilt__ : For dependency injection
 * __Language__ : Kotlin
 
 # Architecture Diagram
 This application strictly follows the below architecture 
 
-<img src = "https://github.com/kanch231004/News-Feed/blob/master/screenshots/Architecture.png" width = 450 />
+<img src = "https://github.com/Swapnesh7677/-Exxceliq/blob/main/screenshots/Architecture.png" width = 450 />
 
-
-
-Follow instructions in build-gradle (app) to integrate API key to build the project.
