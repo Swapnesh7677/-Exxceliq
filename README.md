@@ -1,4 +1,4 @@
-# News-Feed Jetpack Components
+# Jetpack Components
 App demonstrating Clean Architecture using Coroutines and Android Jetpack Components (Room, MVVM Paging, Navigation Components and Live Data)
 
 
